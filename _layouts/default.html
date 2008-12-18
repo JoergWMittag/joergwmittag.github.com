@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-DE" lang="de-DE">
+	<head>
+		<meta http-equiv='Content-type'     content='text/html; charset=UTF-8' />
+		<title>{{ page.title }}</title>
+		<meta name='author'      content='Jörg W Mittag' />
+		<meta name='description' content="{{ page.title }}" />
+		<meta name='keywords'    content='Jörg Mittag, Jörg, Mittag, {{ page.tags | join: ',' }} {{ page.topics | join: ',' }} {{ page.categories | join: ',' }}' />
+		<meta name='date'        content='{{ site.time | date_to_xmlschema }}' />
+		<meta name='DC.Title'    content="{{ page.title }}" />
+		<meta name='DC.Creator'  content='Jörg W Mittag' />
+
+		<meta name='robots'      content='index, follow' />
+
+		<!-- Stylesheet -->
+		<link rel='stylesheet'      href='styles/style.css' type='text/css' />
+
+		<!-- OpenID Delegation -->
+		<link rel='openid.server'   href='http://MeinGuter.Name/index.php/serve/' />
+		<link rel='openid.delegate' href='http://Joerg.Mittag.MeinGuter.Name/' />
+
+		<!-- Dirty JavaScript hack to make IE able to apply CSS to elements that it doesn't usually know about, plus miscellaneous IE rules --> 
+		<!--[if lt IE 9]>
+			<script src='http://HTML5Shiv.GoogleCode.Com/svn/trunk/html5.js'></script>
+		<![endif]--> 
+	</head>
+	<body>
+	</body>
+</html>
